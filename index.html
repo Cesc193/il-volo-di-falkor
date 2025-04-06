@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Il Volo di Falkor</title>
   <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Merriweather&display=swap" rel="stylesheet">
   <style>
@@ -38,16 +39,27 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 1rem;
+      gap: 2rem;
       margin-bottom: 2rem;
     }
 
     .card {
       border: 1px solid #ccc;
       border-radius: 0.5rem;
-      padding: 1rem;
-      max-width: 250px;
+      padding: 1.5rem;
+      width: 250px;
       background-color: white;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
 
     .card h2 {
@@ -61,44 +73,47 @@
     }
 
     .symbol img {
-      width: 60px;
+      width: 100px;
     }
 
     footer {
       font-size: 0.9rem;
-      margin-top: 0.5rem;
+      margin-top: 1rem;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
   <h1>Il Volo di Falkor</h1>
   <p class="subtitle">C'è un momento in cui il cuore vola e tutto cambia.</p>
-  <img src="falkor.png" alt="Falkor che vola" class="falkor-image">
+  <img src="falkor.png" alt="Falkor che vola" class="falkor-image"/>
 
   <div class="card-container">
     <div class="card">
-     <a href="diario.html" style="text-decoration: none; color: inherit;">
-    <h2>Diario di bordo</h2>
-    <p>Riflessioni e racconti di viaggio, sulla ricerca interiore e la scoperta del sé.</p>
-  </a>
-    <div class="card">
-      <a href="falkor.html" style="text-decoration: none; color: inherit;">
-    <h2>Imparare da Falkor</h2>
-    <p>Gli insegnamenti del mio cane, tra sogni e quotidiano, magia e realtà.</p>
-  </a>
+      <a href="diario.html">
+        <h2>Diario di bordo</h2>
+        <p>Riflessioni e racconti di viaggio, sulla ricerca interiore e la scoperta del sé.</p>
+      </a>
     </div>
     <div class="card">
-      <a href="aiutare.html" style="text-decoration: none; color: inherit;">
-    <h2>Aiutare gli altri</h2>
-    <p>Piccole e grandi azioni di supporto, per chi ha bisogno di un po’ di luce.</p>
+      <a href="falkor.html">
+        <h2>Imparare da Falkor</h2>
+        <p>Gli insegnamenti del mio cane, tra sogni e quotidiano, magia e realtà.</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="aiutare.html">
+        <h2>Aiutare gli altri</h2>
+        <p>Piccole e grandi azioni di supporto, per chi ha bisogno di un po’ di luce.</p>
+      </a>
     </div>
   </div>
 
-  <div class="symbol" style="margin-top: 3rem;">
-  <img src="arwin.png" alt="Simbolo Arwin" style="transform: scale(1.5);">
+  <div class="symbol">
+    <img src="arwin.png" alt="Simbolo Arwin"/>
   </div>
   <footer>
-    <p style="font-style: italic;">Questo volo nasce dalla luce che ho nel cuore: una ha quattro zampe, l’altra due occhi che brillano.</p>
+    Questo volo nasce dalla luce che ho nel cuore: una ha quattro zampe, l’altra due occhi che brillano.
   </footer>
 </body>
 </html>
