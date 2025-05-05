@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -21,35 +22,19 @@
       padding: 2rem;
       overflow-x: hidden;
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
     h1 {
       font-family: 'Uncial Antiqua', cursive;
       font-size: 3rem;
       margin-bottom: 1rem;
-      animation: fadeIn 2s ease-in-out;
     }
-
     p.subtitle {
       font-size: 1.5rem;
       margin-bottom: 2rem;
     }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-
     .falkor-image {
       max-width: 300px;
       margin-bottom: 2rem;
-      animation: float 6s ease-in-out infinite;
     }
-
     .card-container {
       display: flex;
       flex-wrap: wrap;
@@ -57,7 +42,6 @@
       gap: 2rem;
       margin-bottom: 2rem;
     }
-
     .card {
       border: 1px solid #ccc;
       border-radius: 0.5rem;
@@ -66,47 +50,31 @@
       background-color: white;
       transition: transform 0.2s;
     }
-
     .card:hover {
       transform: scale(1.03);
     }
-
     .card a {
       text-decoration: none;
       color: inherit;
       display: block;
     }
-
     .card h2 {
       font-size: 1.25rem;
       margin-bottom: 0.5rem;
     }
-
     .symbol {
       margin-top: 2rem;
       margin-bottom: 0.5rem;
     }
-
     .symbol img {
       width: 100px;
     }
-
     footer {
       font-size: 0.9rem;
       margin-top: 1rem;
       font-style: italic;
     }
   </style>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K6YG097WYG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-K6YG097WYG');
-  </script>
-
 </head>
 <body>
   <h1>Il Volo di Falkor</h1>
@@ -119,6 +87,13 @@
     </a>
   </div>
 
+  <!-- Consiglio per la lettura -->
+  <div class="card">
+    <a href="lasciarsi-andare.html">
+      <h2>Consiglio per la lettura: abbandonati alle emozioni, ritrova te stesso</h2>
+      <p>Lasciarsi andare non è perdersi: è vivere, sentire, e diventare ogni giorno una versione più vera di sé. Inizia da qui il tuo viaggio.</p>
+    </a>
+  </div>
 
   <div class="card-container">
     <div class="card">
